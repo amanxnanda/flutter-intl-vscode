@@ -35,6 +35,17 @@ dependencies:
 
 *NOTE:* The extension under the hood uses a globally activated `intl_utils` package for generating localization files. As of version `1.19.0`, the extension checks whether the project uses the `intl_utils` package as a dependency (or dev dependency), and if it does, it uses an identical version during generation. If not, the plugin will either use the globally activated version (if it matches the project configuration) or activate the correct version that aligns with your project's setup.
 
+#### Optional: Configure formatter page width
+
+If you want generated localization files and your own Dart code to wrap at a wider column width, add a `formatter` section to your project's `analysis_options.yaml` (create the file at the project root if it doesn't exist):
+
+```
+formatter:
+    page_width: 100
+```
+
+This configures the Dart formatter used by `dart format` (which the extension invokes after generating files) to use a 100 character line width instead of the default 80. Adjust the value to suit your team's conventions. No restart is required; future generations will use the new width.
+
 Setup your `localizationsDelegates` and your `supportedLocales` which will allow to access the strings.
 
 <pre>
