@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.20.0 - 2025-11-21
 
-- Automatically run `flutter format` on the `lib/generated` directory after successful localization file generation for both projects and modules.
+- Automatically run `dart format` on the `lib/generated` directory after successful localization file generation for both projects and modules.
 
 ## 1.19.3 - 2023-08-04
 

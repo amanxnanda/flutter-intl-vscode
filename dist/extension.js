@@ -1717,6 +1717,12 @@ module.exports = (function (e) {
       (t.getFlutterSdkExePath = function (e) {
         return r.join(e, s.FLUTTER_PATH);
       }),
+      (t.getDartSdkExePath = function (e) {
+        if (!e) return e;
+        const n = r.dirname(e);
+        const a = t.isWin ? "dart.exe" : "dart";
+        return r.join(n, a);
+      }),
       (t.isValidVersion = function (e) {
         return /^.*\d+\.\d+\.\d+.*$/.test(e);
       }),
@@ -8091,8 +8097,9 @@ module.exports = (function (e) {
             o.on("close", (code) => {
               if (code === 0) {
                 try {
+                  const dartPath = d.getDartSdkExePath(this._flutterSdkExePath);
                   const fmt = c.runProcess(
-                    this._flutterSdkExePath,
+                    dartPath,
                     ["format", r + "/lib/generated"],
                     r
                   );

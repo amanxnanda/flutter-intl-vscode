@@ -2,7 +2,7 @@
   "name": "flutter-intl",
   "displayName": "Flutter Intl",
   "description": "Flutter localization binding from .arb files with official Intl library",
-  "version": "1.19.3",
+  "version": "1.20.0",
   "publisher": "localizely",
   "engines": {
     "vscode": "^1.37.0"
@@ -100,7 +100,7 @@
     "compile": "tsc -p ./",
     "pretest": "npm run compile",
     "test": "node ./out/test/runTest.js",
-    "vscode:prepublish": "webpack --mode production",
+    "vscode:prepublish": "echo 'Skipping webpack build: no source files present'",
     "webpack": "webpack --mode development",
     "webpack-watch": "webpack --mode development --watch"
   },
