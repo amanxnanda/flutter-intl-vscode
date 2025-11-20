@@ -7,15 +7,15 @@
   "engines": {
     "vscode": "^1.37.0"
   },
-  "license": "https://github.com/localizely/flutter-intl-vscode/blob/master/LICENSE",
+  "license": "https://github.com/amanxnanda/flutter-intl-vscode/blob/file-format/LICENSE",
   "bugs": {
-    "url": "https://github.com/localizely/flutter-intl-vscode/issues",
-    "email": "support@localizely.com"
+    "url": "https://github.com/amanxnanda/flutter-intl-vscode/issues",
+    "email": "amannanda8@gmail.com"
   },
-  "homepage": "https://github.com/localizely/flutter-intl-vscode",
+  "homepage": "https://github.com/amanxnanda/flutter-intl-vscode",
   "repository": {
     "type": "git",
-    "url": "https://github.com/localizely/flutter-intl-vscode.git"
+    "url": "https://github.com/amanxnanda/flutter-intl-vscode.git"
   },
   "keywords": [
     "flutter",
